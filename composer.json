@@ -1,0 +1,35 @@
+{
+    "name": "malygin/laravel-rpc-server",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey Malygin",
+            "email": "hello@andrey-malygin.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Malyg1n\\JsonRpcServer\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-json": "*",
+        "laravel/framework": "8.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "6.*",
+        "phpunit/php-code-coverage": "^9.0",
+        "phpunit/phpunit": "^9.4",
+        "symfony/var-dumper": "^5.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Malyg1n\\JsonRpcServer\\JsonRpcServerServiceProvider"
+            ]
+        }
+    }
+}
